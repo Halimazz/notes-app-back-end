@@ -15,9 +15,9 @@ app.use(cors()); // Middleware CORS yang diaktifkan untuk semua origin
 routes(app); // Menyediakan instance 'app' ke dalam routes
 
 // Konfigurasi host
-const host = process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0';
+const host = process.env.NODE_ENV !== "production" ? "localhost" : "0.0.0.0";
 
 // Menjalankan server pada port 5001
-app.listen(5002, () => {
-  console.log(`Server berjalan pada http://${host}:${5002}`);
+app.listen(5000, () => {
+  console.log(`Server berjalan pada http://${host}:${5000}`);
 });
